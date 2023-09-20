@@ -6,7 +6,7 @@
 /*   By: educlos <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 17:26:59 by educlos           #+#    #+#             */
-/*   Updated: 2023/09/20 12:22:28 by educlos          ###   ########.fr       */
+/*   Updated: 2023/09/20 12:51:10 by educlos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ int	aldready_sort(t_list **stack_a, t_list **stack_b, int *tab)
 	}
 	*stack_a = tmp;
 	free_all(stack_a, stack_b, tab);
-	write(1, "Deja trier", 10);
 	return (1);
 }
 
