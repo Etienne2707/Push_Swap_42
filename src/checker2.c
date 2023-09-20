@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   checker2.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: educlos <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/19 17:26:28 by educlos           #+#    #+#             */
+/*   Updated: 2023/09/19 17:43:20 by educlos          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 int	checker(int argc, char **argv)
@@ -42,9 +54,9 @@ int	check_double(int argc, char **argv)
 	return (1);
 }
 
-int all_digits(int argc, char **argv)
+int	all_digits(int argc, char **argv)
 {
-    int	i;
+	int	i;
 	int	j;
 	int	k;
 
@@ -68,16 +80,16 @@ int all_digits(int argc, char **argv)
 	return (1);
 }
 
-int check_int(char **argv)
+int	check_int(char **argv)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (argv[i] != 0)
-    {
-        if (ft_atoi(argv[i]) < -2147483648 || ft_atoi(argv[i]) > 2147483647)
+	i = 0;
+	while (argv[i] != 0)
+	{
+		if (ft_atoi(argv[i]) < -2147483648 || ft_atoi(argv[i]) > 2147483647)
 			return (0);
-        i++;
-    }
-    return (1);
+		i++;
+	}
+	return (1);
 }

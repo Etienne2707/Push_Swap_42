@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   init.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: educlos <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/19 17:26:49 by educlos           #+#    #+#             */
+/*   Updated: 2023/09/19 18:38:47 by educlos          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-void	init_stack(t_list **stack_a, int ac, char **av,int *tab)
+void	init_stack(t_list **stack_a, int ac, char **av, int *tab)
 {
 	int		i;
 	int		j;
@@ -36,7 +48,6 @@ t_list	*create_nb(int a, int b, t_list **stack_a, int *tab)
 
 void	init_pos(t_list **stack_a, int *tab, int ac)
 {
-	
 	t_list	*tmp;
 	int		i;
 
@@ -54,7 +65,7 @@ void	init_pos(t_list **stack_a, int *tab, int ac)
 	}
 }
 
-int *init_tab(int *tab, int ac)
+int	*init_tab(int *tab, int ac)
 {
 	int	i;
 	int	j;
@@ -62,7 +73,6 @@ int *init_tab(int *tab, int ac)
 
 	i = 0;
 	j = 0;
-
 	while (i < ((ac - 1) - 1))
 	{
 		j = 0;
@@ -78,5 +88,5 @@ int *init_tab(int *tab, int ac)
 		}
 		i++;
 	}
-    return (tab);
+	return (tab);
 }
